@@ -1,4 +1,4 @@
-import { ADD_TODO , DELETE_TODO , COMPLETE_TODO , EDIT_TODO, SAVE_TODO, CLEAR } from './types' 
+import { ADD_TODO , DELETE_TODO , COMPLETE_TODO , EDIT_TODO, SAVE_TODO, CLEAR , FILTER_TODO} from './types' 
 
 export const addTodo = newTodo => {
     return {
@@ -40,3 +40,4 @@ export const clearSaved = () => {
         type : CLEAR
     }
 }
+

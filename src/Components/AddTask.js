@@ -21,22 +21,27 @@ if (this.props.saved) {
     this.setState({description :''})
     this.props.clear()
 }else {
+    if (this.state.description=="") {alert("Please add a task descreption")}
+    else {
     this.props.addNewTodo({
         id : uuidv4(), 
         description : this.state.description,
         isDone: false})
-    this.setState({description :''})}
-}
+    this.setState({description :''})
+}}}
 
-componentWillReceiveProps(nextProps) {
+componentWillReceiveProps(nextProps){
 this.setState(nextProps.saved)
 }
 
     render(){    
         return (
-            <div>
-                <input type="text" placeholder="Add new todo task..." onChange={this.handleChange} value={this.state.description}></input>
-                <button onClick={this.addOrEdit}>{this.props.saved ? 'Edit' : 'Add'}</button>
+            <div className="addTaskDiv">
+                <div className="toAddDiv">
+                    <label >Task to Add/Edit : </label>
+                    <input className="addTaskinput" type="text" placeholder="Add new todo task..." onChange={this.handleChange} value={this.state.description}></input>
+                    <button onClick={this.addOrEdit}>{this.props.saved ? 'Save' : 'Add'}</button>
+                </div>
             </div>
         )
     }
@@ -56,5 +61,5 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect (mapStateToProps,mapDispatchToProps) (AddTask)
+export default connect (mapStateToProps,mapDispatchToProps)(AddTask)
 

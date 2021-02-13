@@ -1,7 +1,102 @@
 .App {
   text-align: center;
+  background-size: cover;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+}
+
+.titleApp {
+  margin-top : 0;
+  padding : 0em;
+  border-bottom: 2px solid black ;
+  background-image: url('https://www.ysmh.com.tw/files/blog/save-money-to-move/save-money-to-move4.jpg');
+  background-size: cover;
+}
+
+.addTaskinput {
+  width : 20%;
+  margin : 0 1% 1%;
+}
+
+.filterDiv {
+  background-color: #e6e6e6;
+  border:2px solid black ;
+  width : 100%;
+  margin: 0.5em auto;
+  border-radius: 1em;
+  padding : 0.5% 1%;
+}
+
+.inputFilter {
+  display: inline-block; 
+  margin : 0 5%;
+}
+
+.titleFilter {
+  margin-top : 0.5%;
+  margin-bottom : 1%;
+  text-decoration: underline;
+}
+
+.toAddDiv {
+  margin: 0.5% auto 0.5%;
+}
+
+.tasksListDiv {
+  margin : 0 auto;
+  width : 32%
+}
+
+.tasksListTitle {
+  margin : 0; 
+  background-color: #e6e6e6;
+  border:2px solid black ;
+  border-radius: 1em;
+}
+
+.taskDiv {
+background-color:#e6ffff;
+padding-right: 0.2em;
+border : solid 1px black; 
+border-radius: 1em;
+margin: 0.5em auto;
+}
+
+.btn {
+  margin : auto 0.5em;
+}
+
+.completeBtn {
+  width: 6em;
+}
+
+.descreptionTask { 
+  margin : 0.2em auto 0.2em 0;
+  display : inline-block; 
+  padding: 0.5em;
+  width: 40%;
 }
 
 .done {
+  margin : 0.2em auto 0.2em 0;
   text-decoration: line-through;
+  display : inline-block; 
+  padding: 0.5em;
+  width: 40%;
+}
+
+.btns {
+  margin : 0.2em 0;
+  float : right; 
+  width: 55%;
+}
+
+.tasksList {
+  min-height: 650px;
+  background-color: white;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border: solid 1px black;
+  border-radius: 1em;
 }

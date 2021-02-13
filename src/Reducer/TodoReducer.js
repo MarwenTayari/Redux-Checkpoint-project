@@ -1,7 +1,6 @@
-import {ADD_TODO , DELETE_TODO, COMPLETE_TODO , SAVE_TODO, EDIT_TODO} from '../Actions/types'
+import {ADD_TODO , DELETE_TODO, COMPLETE_TODO , EDIT_TODO, FILTER_TODO} from '../Actions/types'
 
-const initialState = [
-    
+const initialState = [  
 ]
 
 const TodoReducer = (State = initialState, action) => {
