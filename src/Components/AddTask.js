@@ -21,7 +21,7 @@ if (this.props.saved) {
     this.setState({description :''})
     this.props.clear()
 }else {
-    if (this.state.description=="") {alert("Please add a task descreption")}
+    if (this.state.description=="") {alert("Please add a task descreption !")}
     else {
     this.props.addNewTodo({
         id : uuidv4(), 

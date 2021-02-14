@@ -3,6 +3,10 @@
   background-size: cover;
   font-family: 'Caveat', cursive;
   font-size: 20px;
+  background-image: url('https://image.freepik.com/free-photo/office-desk-workspace-table-background_31965-3298.jpg');
+  background-size: 100%;
+  background-size: cover;
+  height: 100%;
 }
 
 .titleApp {
@@ -24,7 +28,6 @@
   width : 100%;
   margin: 0.5em auto;
   border-radius: 1em;
-  padding : 0.5% 1%;
 }
 
 .inputFilter {
@@ -60,10 +63,13 @@ padding-right: 0.2em;
 border : solid 1px black; 
 border-radius: 1em;
 margin: 0.5em auto;
+height: 75px;
 }
 
 .btn {
-  margin : auto 0.5em;
+  margin : 0.1em auto ;
+  display: block;
+  width: 6em;
 }
 
 .completeBtn {
@@ -74,7 +80,8 @@ margin: 0.5em auto;
   margin : 0.2em auto 0.2em 0;
   display : inline-block; 
   padding: 0.5em;
-  width: 40%;
+  width: 65%;
+  height: 47px;
 }
 
 .done {
@@ -86,16 +93,20 @@ margin: 0.5em auto;
 }
 
 .btns {
+  text-align: center;
   margin : 0.2em 0;
   float : right; 
-  width: 55%;
+  width: 25%;
 }
 
 .tasksList {
-  min-height: 650px;
+  background-image: url('https://img.freepik.com/vecteurs-libre/personnes-faisant-illustration-liste-taches_53876-43029.jpg?size=626&ext=jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 419px;
   background-color: white;
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0;
   padding: 0.5em;
   border: solid 1px black;
   border-radius: 1em;

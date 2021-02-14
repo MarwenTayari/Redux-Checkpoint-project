@@ -12,20 +12,18 @@ class ListTask extends Component {
 render(){
     return (
         <div className="tasksListDiv">   
-            <h3 className="tasksListTitle">Tasks List : </h3>
-
             <div className="filterDiv">
                     <p className="titleFilter">Tasks Filtering :</p>
                     <form>
                         <div className="inputFilter">
                         <label>
                             <input type="radio" id="Completed" name="task" onChange={() => this.setState({filter: true})} value={true}/> 
-                            Completed</label><br/>
+                            Done</label><br/>
                         </div>
                         <div className="inputFilter">
                         <label >
                             <input type="radio" id="Not Completed" name="task" onChange={() => this.setState({filter: false})} value={false} />
-                            Not Completed</label><br/>
+                            Not </label><br/>
                         </div>
                         <div className="inputFilter">
                         <label >
@@ -35,7 +33,11 @@ render(){
                     </form>
             </div>
 
+            
+
              <div className="tasksList">
+             
+            <h3 className="tasksListTitle">Tasks List : </h3>
                 {
                  this.props.todos.filter(el=> this.state.filter===null ? el : el.isDone === this.state.filter).map(el => <Task todo={el}/>)
                  }
